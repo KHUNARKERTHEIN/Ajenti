@@ -1,0 +1,169 @@
+Ajenti 2.2.9 - Dev
+
+Ajenti 2.2.8 - 01/01/2024
+
+- Update cryptography, gipc and gevent versions
+- Catch gipc errors
+- Use escape from html module
+- Fix TFA config not loaded properly
+- [core] Upgrade to FontAwesome 6.4.2
+- [power] Fix power requests
+
+Ajenti 2.2.7 - 01/09/2023
+
+- Update cryptography library
+- Harden base url for password reset email
+- Only allow same origin in cors policy
+- [Core] Fix sudo elevation
+- [Dns api] Add sharing id for gandi provider
+
+Ajenti 2.2.6 - 18/06/2023
+
+- Update cryptography, pyopenssl and socketio
+- Migrate to http.cookies for Py >= 3.11
+
+Ajenti 2.2.5 - 08/05/2023
+
+- Update gevent to 22.10.2
+- Update gipc to 1.5.0
+- [Core] Add input type to messagebox (useful for passwords)
+- [Core] Update Angular
+- [Dashboard] Fix loadavg on systems without /proc/loadavg
+- [DNS API] Add new plugin to manage external DNS
+- [Iptables] Add new plugin to list chains and rules
+
+Ajenti 2.2.4 - 11/02/2023
+
+- Fix empty smtp config load. See #1422.
+- Accept more http requests.
+- Allow XML bodies and responses.
+- Prevent cgi bug with binary content.
+- Support for http basic auth.
+- Upgrade cryptography and pyOpenSSL versions.
+- Ignore plugins with wrong yml syntax.
+- Avoid unwanted redirections.
+- [Services] Fix missing enabled attribute.
+- [Filesystem] Rename files.
+- [Network] Fix loading wrong config files in /etc/netplan.
+
+Ajenti 2.2.3 - 05/01/2023
+
+- Add TOTP code verification at login and TOTP management in user space
+- Allow HEAD requests on GET targets
+- Allow body for PATCH requests
+- Fix encoding problems when locales are not available
+- Fix dummy loop in ajenti-panel when using venv
+- [Services] Catch systemctl openration errors. Fix #1407
+
+Ajenti 2.2.1 - 18/07/2022
+
+- Add `trusted_proxies` and `trusted_domains` parameters to config file
+- Allow resources requests from trusted domains
+- Add view parameter for custom index.html
+- Fix config structure for `smtp.yml`
+
+Ajenti 2.2.0 - 27/06/2022
+
+- Add support for Rocky Linux
+- Replace @url decorator with @get, @post, @delete ...
+- Replace deprecated sha1 digest algorithm with sha256. It's necessary to replace all client certificates.
+- Full breadcrumb in filemanager plugin
+- New option 'force' in ssl config to enable redirect from port 80 to https port
+- Replace deprecated imp with importlib
+- Upgrade to new versions of gipc, gevent and PyOpenSSL
+- Add signout method to perform actions on logout
+- Force latin-1 encoding in url to fix locales problems
+- Implement more shell colons for more languages support
+- Minor fixs in common plugins
+
+Ajenti 2.1.44 - 17/02/2022
+
+- Migration to python-socketio
+- Email backend managed with jinja templates
+- Configuration of email templates
+- Settings for smtp relay
+- Support for emails in auth_users plugin
+- Separated user config in auth_users plugin
+- Password reset functionality
+- Stronger support for systemd in package plugin
+- Fix header as latin chars in non-latin languages
+- Support for robots.txt
+- Add fail2ban filter
+- Diverses security and bugs fixs
+
+Ajenti 2.1.43 - 03/09/2021
+
+- Support for Python 3.9,
+- Fix sudo elevation,
+- Fix client certificate generation,
+- Workaround for pip packages search,
+- Open readonly file in readonly mode in notepad,
+- Some corrections for session handling and terminal.
+
+Ajenti 2.1.40 - 22/03/2021
+
+- Update Gevent 1.5 and gipc 1.1.1,
+- Move to python-daemon
+- Hotfix : prevent config leakage,
+- Diverses little fixs in the plugins and DeepSource,
+- Doctrings for all plugins,
+- Add support for multiple uploads,
+- Split users list from config file and updated auth_users plugin.
+
+Ajenti 2.1.37 - 27/11/2020
+
+- Fix requirement problem with greenlet,
+- Fix install in CentOS 8,
+- Fix PID error with systemd,
+- Some Python3 fixs,
+- Add refresh with click on sidebar entry,
+- Add fstab plugin,
+- Add host plugin,
+- Add softraid plugin.
+
+Ajenti 2.1.36 - 25/06/2020
+
+- Remove six module,
+- Add session list plugin,
+- Add certificate plugin,
+- Add cron plugin,
+- Add docker plugin,
+- Fix notepad problem on Windows,
+- Fix platform network problem on Ubuntu.
+
+
+Ajenti 2.1.35 - 03/05/2020
+
+- Fix some Python3 compatibility issues between Python 3.5 and Python 3.7,
+- Fix modules requirements,
+- Elevate user config as provider for more contexts options,
+- Compatibility with Ubuntu Focal,
+- Disable flashsocket,
+- Update to FontAwesome 5.13.0,
+- Update french and german translations,
+- Update install script for install in CentOS/RHEL 8, Debian 9/10, Ubuntu 18.04/20.04,
+- Update doc for install in CentOS/RHEL 8, Debian 9/10, Ubuntu 18.04/20.04.
+
+
+Ajenti 2.1.34 - 13/04/2020
+
+- Switch to Python 3
+- Fix restart problem,
+- Fix some Python3 compatibility issues,
+- Fix terminal plugin and add autoclose,
+- Direct request for plugin manager to pypi.org,
+- Update package manager,
+- Group isolation.
+
+
+Ajenti 2.1.33 - 13/02/2020
+
+- Show session time,
+- Manage session timeout and redirect to login,
+- Some Python 3 compatibility fixs,
+- Add broadcast to get sessions list,
+- Differenciate FQDN and peer cert for compatibility with Let's Encrypt,
+- Switch to gevent SSL,
+- Switch to gevent-socketio-hartwork,
+- Fix shell injection i nos auth provider.
+
